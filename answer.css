@@ -1,16 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(156, 155, 153);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    color: #333;
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #0873ee;
 }
 
+/* Container for the input sections */
+div {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Input fields */
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Button Styles */
 button {
-    margin-top: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+button:hover {
+    background-color: #357ab8; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* List Styles */
 ul {
     list-style-type: none;
+    padding: 0;
 }
+
+li {
+    background-color: #e7f3fe;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    div {
+        width: 90%;
+    }
+}
+
